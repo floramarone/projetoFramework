@@ -14,10 +14,25 @@
 class login extends CI_Controller {
 
     //put your code here
+    function __construct() {
+
+        parent::__construct();
+    }
+
     public function index() {
-       // $this->load->view('template/header');
+        if ($this->session->userdata('estou_logado')) {
+
+        redirect('Home');
+
+        } else {
+
+        $this->load->view('template/header');
+
         $this->load->view('login');
-      //  $this->load->view('template/footer');
+
+        $this->load->view('template/footer');
+
+        }
     }
 
     public function autenticar() {

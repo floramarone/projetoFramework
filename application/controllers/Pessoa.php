@@ -23,8 +23,11 @@ class Pessoa extends CI_Controller {
     }
 
     public function index() {
+        $this->load->view('template/header');
         $lista['pessoas'] = $this->pessoa->listar();
         $this->load->view('pessoaCadastro', $lista);
+        $this->load->view('template/footer');
+        
     }
 
     public function inserir() {

@@ -10,6 +10,7 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
+        <div class="jumbotron text-center">
         <div class="row">
             <!--Responsivo para smartphone, tablet e PC-->
             <div class="col-xs-1 col-sm-1 col-lg-3"></div>
@@ -30,6 +31,7 @@ and open the template in the editor.
                 <p></p>
             </div>
             <div class="col-xs-1 col-sm-1 col-lg-3"></div>
+        </div>
         </div>
     </body>
 </html>

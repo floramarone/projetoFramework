@@ -18,6 +18,8 @@ class User extends CI_Controller {
         parent::__construct();
         if (!$this->session->userdata('estou_logado')) {
             redirect('Login');
+        }elseif($this->session->userdata('logado')->perfilAcesso != 'admin'){
+            redirect('home');
         }
         $this->load->model('user_model', 'user'); //user este é um apelido para o model
     }

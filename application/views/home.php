@@ -1,16 +1,19 @@
-<!DOCTYPE html>
+<div class="jumbotron text-center"  >
+<div class="row">
 
+    <!--Responsivo para smartphone, tablet e PC-->
 
-<html>
-    <head>
-        <title>Projeto</title>
-    </head>
-    <body>
-        <a class="btn btn-primary" href="<?php echo base_url(); ?>login/sair">Sair</a>
+    <div class="col-xs-1 col-sm-1 col-lg-3"></div>
+
+    <div class="col-xs-10 col-sm-10 col-lg-6">
+
         <h1>Home</h1>
-        <p>Olá mundo!</p>
-        <a href="<?php echo base_url(); ?>pessoa">Cadastro de Pessoa</a>
-        <a href="<?php echo base_url(); ?>user">Cadastro de User</a>
 
-    </body>
-</html>
+        <p>Seja bem vindo(a)!</p>
+
+    </div>
+
+    
+
+</div>
+</div>
